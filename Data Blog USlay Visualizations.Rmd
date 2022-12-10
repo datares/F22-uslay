@@ -1,0 +1,19 @@
+---
+title: "Data Blog Visualizations"
+author: "Helena Xu"
+date: "2022-10-28"
+output: html_document
+---
+
+```{r}
+employment_salaries_major <- read.csv("all-ages.csv")
+library(ggplot2)
+ggplot(employment_salaries_major, aes(x = Major_category, y = Median)) + 
+  geom_boxplot(fill = "lightblue") + 
+labs(title = "Median Salaries by Category of Major",
+     x = "Major Category",
+     y = "Median Salary") +
+  theme_linedraw() +
+  coord_flip() + theme(plot.title = element_text(hjust = 0.5))
+```
+
