@@ -1,0 +1,9 @@
+Projected salary was found by creating logarithmic line of best fit for salary data
+Starting salary projection: y = 69997 - 4997 ln (x), R^2 = 0.656
+Mid-career salary projection: y = 137082 - 11242 ln (x), R^2 = 0.748
+
+Difference between projected and actual salaries was normalized to create a score index between 0 and 1
+Starting salary normalization: (difference in salary + 10271)/(16483 + 10271)
+Mid-career salary normalization: (difference in salary + 19072)/(24828 + 19072)
+
+Percent difference calculated using formula (x2 - x1)/x1
